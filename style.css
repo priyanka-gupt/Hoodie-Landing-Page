@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#239b7e;
+    --main-font:"Playfair Display",serif;
+    --primary-font:"Roboto",sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5rem;
+}
+
+.burger span {
+    border: 2px solid black;
+    width: 40px;
+    height: 1px;
+    margin: 2px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    margin-top: 2rem;
+}
+
+.main-heading{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    transform: translateY(-40px);
+    color: #00000097;
+    line-height: 5rem;
+}
+
+.main-heading span {
+    color: black;
+}
+
+.primary-heading {
+    max-width: 500px;
+    font-family: var(--primary-font);
+    line-height: 25px;
+    margin-bottom: 1rem;
+    color: #716d6d;
+}
+
+.btn-fill {
+    background-color: #adb5bd;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.5 ease-out;
+}
+
+
+.btn-fill:hover {
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    color: #239b7e;
+}
+
+.btn-outline.active {
+    border: 2px solid #adb5bd;
+    color: #239b7e;
+    background: transparent;
+    padding: 10px 20px ;
+    cursor: pointer;
+    transition: all 0.5 ease-out;
+}
+
+.btn-outline.active:hover {
+    background:#adb5bd;
+    color: #fff;
+}
+
+.img-container {
+    border-radius: 50%;
+    box-shadow: 4px 7px 5px 2px #bcbaba;
+}
+
+.header-img {
+    border-radius: 100%;
+    background: url(https://preview.redd.it/y8b5262r30i81.png?auto=webp&s=f5b610271d5fd8c1453dc84c96e8aea58314750a);
+    background-position: top;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.section-one-img {
+    background: url(https://yt3.googleusercontent.com/sAfJxlF_vNUnwRes0IpANbsOSwMkYGgR5tFEmIInLm7jtPduei3sGGEZAwmF0WW8S1CPhaTOvQ=s900-c-k-c0x00ffffff-no-rj);
+    background-position: top;
+    background-size: cover;
+}
